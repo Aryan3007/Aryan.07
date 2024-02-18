@@ -10,7 +10,7 @@ const FrontPage = () => {
               <span className="sm:block">One Line of Code at a Time </span>
             </h1>
 
-            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed dark:text-white text-black"> 
               "Building innovative websites and applications tailored to your
               needs. Let's create your digital masterpiece together."
             </p>
