@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,9 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex justify-between lg:items-center">
           <div className="flex items-center justify-between">
-            <a href="#">
+            <Link to="/">
               <img className="w-auto h-6 sm:h-7" src="./logo.png" alt="Logo" />
-            </a>
+            </Link>
             <div className="flex lg:hidden">
               <button
                 onClick={toggleMenu}
@@ -57,8 +58,8 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col mt-4 text-gray-600 capitalize dark:text-gray-300 lg:flex lg:flex-row lg:mt-0 lg:items-center lg:px-16 lg:-mx-4">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
                   activeButton === "features"
                     ? "text-blue-600  bg-transparent border-b-2 border-blue-500"
@@ -67,7 +68,7 @@ const Navbar = () => {
                 onClick={() => handleButtonClick("features")}
               >
                 Home
-              </a>
+              </Link>
               <a
                 href="#"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
@@ -121,7 +122,7 @@ const Navbar = () => {
                 aria-label="Reddit"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-7 h-7 fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -134,7 +135,7 @@ const Navbar = () => {
                 aria-label="Facebook"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-7 h-7 fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -147,7 +148,7 @@ const Navbar = () => {
                 aria-label="Github"
               >
                 <svg
-                  className="w-5 h-5 fill-current"
+                  className="w-7 h-7 fill-current"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

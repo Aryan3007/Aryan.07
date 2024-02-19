@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Explore = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -50,8 +52,8 @@ const Explore = () => {
               ab nulla quod dignissimos vel non corrupti doloribus voluptatum
               eveniet
             </p>
-            <a
-              href="#"
+            <Link
+              to="/web-dev"
               className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500"
             >
               <span className="mx-1">View All</span>
@@ -67,7 +69,7 @@ const Explore = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
             <span className="inline-block p-3 text-blue-500 bg-blue-100 rounded-full dark:text-white dark:bg-blue-500">
