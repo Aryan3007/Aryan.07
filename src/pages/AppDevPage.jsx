@@ -22,7 +22,7 @@ const item = {
   },
 };
 
-const WebDevPage = () => {
+const AppDevPage = () => {
   // eslint-disable-next-line no-unused-vars
   const [projects, setProjects] = useState([
     {
@@ -33,7 +33,6 @@ const WebDevPage = () => {
       type: "Business website",
       link: "https://nourishnest.in/",
       github: "https://github.com/Aryan3007/Sony_headphone",
-
     },
     {
       img: "./e1.png",
@@ -43,7 +42,6 @@ const WebDevPage = () => {
       type: "E-Commerce website",
       link: "https://frontend-ecommerce-one.vercel.app/",
       github: "https://github.com/Aryan3007/Sony_headphone",
-
     },
     {
       img: "./n1.png",
@@ -53,7 +51,6 @@ const WebDevPage = () => {
       type: "Business website",
       link: "https://react-nike-web.vercel.app/",
       github: "https://github.com/Aryan3007/Sony_headphone",
-
     },
     {
       img: "./s1.png",
@@ -79,7 +76,7 @@ const WebDevPage = () => {
       <div className="container px-6 py-10 mx-auto">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
-            web development projects
+            App development projects
           </h1>
         </div>
         <hr className="my-8 border-gray-200 dark:border-gray-700" />
@@ -138,4 +135,4 @@ const WebDevPage = () => {
   );
 };
 
-export default WebDevPage;
+export default AppDevPage;

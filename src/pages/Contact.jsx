@@ -7,7 +7,7 @@ const Contact = () => {
           hire Me.
         </h1>
         <p className="mt-4 text-gray-500 dark:text-gray-400">
-        I'm always eager to connect, collaborate, and discuss exciting opportunities. Whether you have a project in mind, want to learn more about my work, or simply wish to say hello, don't hesitate to reach out. Feel free to contact me through the following channels:
+        I'm always eager to connect, collaborate, and discuss exciting opportunities. Whether you have a project in mind, want to learn more about my work, or simply wish to say hello, don't hesitate to reach out.
         </p>
         <div className="mt-6 md:mt-8">
           <h3 className="font-medium text-gray-600 dark:text-gray-300 ">

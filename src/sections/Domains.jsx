@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Graphics from "../subsections/Graphics";
 import Webdev from "../subsections/Webdev";
 import Appdev from "../subsections/Appdev";
 
@@ -17,16 +16,7 @@ const Domains = () => {
           Latest Work
         </h1>
         <div className="flex py-4 mt-4 w-full md:justify-center justify-center items-center dark:border-gray-700">
-          <button
-            className={`h-12 px-5 py-2 -mb-px text-sm text-center ${
-              activeButton === "Animation"
-                ? "text-blue-600 bg-transparent border-b-2 border-blue-500"
-                : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
-            } sm:text-base  whitespace-nowrap focus:outline-none`}
-            onClick={() => handleClick("Animation")}
-          >
-            Graphics
-          </button>
+          
           <button
             className={`h-12 px-5 py-2 -mb-px text-sm text-center ${
               activeButton === "Web design"
@@ -50,7 +40,6 @@ const Domains = () => {
         </div>
 
         <section className="mt-8 space-y-8 lg:mt-12">
-          {activeButton === "Animation" && <Graphics />}
           {activeButton === "Web design" && <Webdev />}
           {activeButton === "App design" && <Appdev />}
         </section>

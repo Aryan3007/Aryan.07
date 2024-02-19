@@ -1,4 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
+
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
+
 const FrontPage = () => {
   return (
     <>
@@ -10,13 +34,13 @@ const FrontPage = () => {
               <span className="sm:block">One Line of Code at a Time </span>
             </h1>
 
-            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed dark:text-white text-black"> 
+            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed dark:text-white text-black">
               "Building innovative websites and applications tailored to your
               needs. Let's create your digital masterpiece together."
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a style={{ "--clr": "#3f88f3" }} className="button" href="#">
+              <Link style={{ "--clr": "#3f88f3" }} className="button" to="allprojects">
                 <span className="button__icon-wrapper">
                   <svg
                     width="10"
@@ -45,15 +69,20 @@ const FrontPage = () => {
                   </svg>
                 </span>
                 Explore Projects
-              </a>
+              </Link>
             </div>
           </div>
         </div>
 
-        <section className="bg-white dark:bg-gray-900">
-          <div className="container px-6 py-8 mx-auto">
-            <div className="grid gap-8 mt-8 justify-center sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-              <a href="#" className="group block">
+        <div className="bg-white dark:bg-gray-900">
+          <div className=" px-6 py-8 mx-auto">
+            <motion.ul
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="grid container gap-8 mt-8 justify-center sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+            >
+              <motion.li variants={item} href="#" className="group block item">
                 <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
                   <img
                     src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -78,9 +107,9 @@ const FrontPage = () => {
                     Omnis quibusdam ab maiores placeat odio id?
                   </p>
                 </div>
-              </a>
+              </motion.li>
 
-              <a href="#" className="group block">
+              <motion.li variants={item} href="#" className="group block item">
                 <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
                   <img
                     src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -105,9 +134,9 @@ const FrontPage = () => {
                     Omnis quibusdam ab maiores placeat odio id?
                   </p>
                 </div>
-              </a>
+              </motion.li>
 
-              <a href="#" className="group block">
+              <motion.li variants={item} href="#" className="group block item">
                 <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
                   <img
                     src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -132,10 +161,10 @@ const FrontPage = () => {
                     Omnis quibusdam ab maiores placeat odio id?
                   </p>
                 </div>
-              </a>
-            </div>
+              </motion.li>
+            </motion.ul>
           </div>
-        </section>
+        </div>
       </section>
     </>
   );

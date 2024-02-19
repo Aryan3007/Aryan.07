@@ -60,59 +60,59 @@ const Navbar = () => {
             <div className="flex flex-col mt-4 text-gray-600 capitalize dark:text-gray-300 lg:flex lg:flex-row lg:mt-0 lg:items-center lg:px-16 lg:-mx-4">
               <Link
                 to="/"
-                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
+                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "features"
-                    ? "text-blue-600  bg-transparent border-b-2 border-blue-500"
+                    ? "  bg-transparent border-b-2 border-blue-500"
                     : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("features")}
               >
                 Home
               </Link>
-              <a
-                href="#"
-                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
+              <Link
+                to="/resume"
+                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "downloads"
-                    ? "text-blue-600 bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 border-blue-500"
                     : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("downloads")}
               >
                 Resume
-              </a>
-              <a
-                href="#"
-                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
+              </Link>
+              <Link
+                to="/allprojects"
+                className={`mt-2 w-20 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "docs"
-                    ? "text-blue-600 bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 border-blue-500"
                     : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("docs")}
               >
-                Peojects
-              </a>
-              <a
-                href="#"
-                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
+                Portfolio
+              </Link>
+              <Link
+                to="/about"
+                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "support"
-                    ? "text-blue-600 bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 border-blue-500"
                     : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("support")}
               >
                 About
-              </a>
-              <a
-                href="#"
-                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200 ${
+              </Link>
+              <Link
+                to="/contact"
+                className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 ${
                   activeButton === "blog"
-                    ? "text-blue-600 bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 border-blue-500"
                     : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("blog")}
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             <div className="flex lg:hidden justify-center mt-6 lg:mt-0 lg:-mx-2">
