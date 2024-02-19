@@ -14,7 +14,7 @@ const Webdev = () => {
       >
         <img
           className="object-cover w-full h-64"
-          src="src\assets\nn1.png"
+          src="./nn1.png"
           alt="Article"
         />
         <div className="p-6">
@@ -71,7 +71,7 @@ const Webdev = () => {
         }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
         <img
           className="object-cover w-full h-64"
-          src="src\assets\e1.png"
+          src="./e1.png"
           alt="Article"
         />
         <div className="p-6">
