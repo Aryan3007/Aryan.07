@@ -27,7 +27,7 @@
 .tomove {
   display: flex;
   flex-direction: column;
-  animation: slide 6s linear infinite; /* Adjust the duration and timing function as needed */
+  animation: slide 6s linear infinite; 
 }
 
 .button {

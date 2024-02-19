@@ -17,21 +17,19 @@ function App() {
         <Navbar />
       </div>
 
-<ScrollToTop/>
+      <ScrollToTop />
       <div className="pt-12">
         <Routes>
           <Route path="/" element={<HomePage />} />
 
-{/* explore section 3 routes */}
+          {/* explore section 3 routes */}
           <Route path="/web-dev" element={<WebDevPage />} />
           <Route path="/app-dev" element={<AppDevPage />} />
 
-
-
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume/>} />
-          <Route path="/allprojects" element={<AllProjects/>} />
+          <Route path="/skills" element={<Resume />} />
+          <Route path="/allprojects" element={<AllProjects />} />
         </Routes>
       </div>
     </>

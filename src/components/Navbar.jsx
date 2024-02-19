@@ -76,7 +76,7 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/resume"
+                to="/skills"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "downloads"
                     ? " bg-transparent border-b-2 border-blue-500"
@@ -84,7 +84,7 @@ const Navbar = () => {
                 }`}
                 onClick={() => handleButtonClick("downloads")}
               >
-                Resume
+                My Skills
               </Link>
               <Link
                 to="/allprojects"
@@ -128,9 +128,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className=" justify-center hidden mt-6 lg:flex gap-3 lg:mt-0 lg:-mx-2">
-            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 hover:bg-zinc-400 duration-100" />
-            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 hover:bg-zinc-400 duration-100" />
-            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 hover:bg-zinc-400 duration-100" />
+            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
+            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
+            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
           </div>
         </div>
       </div>
