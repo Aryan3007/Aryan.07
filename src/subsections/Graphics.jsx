@@ -60,7 +60,14 @@ const Graphics = () => {
           </div>
         </div>
       </motion.div>
-      <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{ rotate: 0, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
         <img
           className="object-cover w-full h-64"
           src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -109,7 +116,7 @@ const Graphics = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
