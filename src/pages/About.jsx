@@ -1,9 +1,25 @@
+// import { motion } from "framer-motion";
+// import { useRef } from "react";
 import { Link } from "react-router-dom";
-
+// import { useFollowPointer } from "../utils/use-follow-pointer";
 /* eslint-disable react/no-unescaped-entities */
 const About = () => {
+  // const ref = useRef(null);
+  // const { x, y } = useFollowPointer(ref);
+
   return (
     <section>
+      {/* <motion.div
+        ref={ref}
+        animate={{ x, y }}
+        transition={{
+          type: "spring",
+          damping: 3,
+          stiffness: 50,
+          restDelta: 0.001,
+        }}
+        className="h-80 box w-80 bg-red-500 rounded-full bg-blend-difference absolute z-50"
+      ></motion.div> */}
       <div className="mx-auto dark:bg-gray-900 max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
           <div className="relative z-10 lg:py-16">

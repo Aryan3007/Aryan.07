@@ -27,7 +27,7 @@ const Explore = () => {
               eveniet
             </p>
             <Link
-              to="/web-dev"
+              to="/animation-dev"
               className="flex items-center -mx-1 text-sm text-blue-500 capitalize transition-colors duration-300 transform dark:text-blue-400 hover:underline hover:text-blue-600 dark:hover:text-blue-500"
             >
               <span className="mx-1">View All</span>

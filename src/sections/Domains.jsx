@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Webdev from "../subsections/Webdev";
 import Appdev from "../subsections/Appdev";
+import Animation from "../subsections/Animation";
 
 const Domains = () => {
   const [activeButton, setActiveButton] = useState("Web design");
@@ -24,7 +25,7 @@ const Domains = () => {
             } sm:text-base  whitespace-nowrap cursor-base focus:outline-none`}
             onClick={() => handleClick("Animation UI")}
           >
-            Animation UI
+            Animated UI
           </button>
           <button
             className={`h-12 px-5 py-2 -mb-px text-sm text-center ${
@@ -49,7 +50,7 @@ const Domains = () => {
         </div>
 
         <section className="mt-8 space-y-8 lg:mt-12">
-          {activeButton === "Animation UI" && <Webdev />}
+          {activeButton === "Animation UI" && <Animation />}
           {activeButton === "Web design" && <Webdev />}
           {activeButton === "App design" && <Appdev />}
         </section>

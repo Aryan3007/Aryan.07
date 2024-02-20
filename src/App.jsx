@@ -9,6 +9,7 @@ import AllProjects from "./pages/AllProjects";
 
 import AppDevPage from "./pages/AppDevPage";
 import ScrollToTop from "./components/ScrollToTop";
+import AnimationPage from "./pages/AnimationPage";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
 
           {/* explore section 3 routes */}
+          <Route path="/animation-dev" element={<AnimationPage />} />
           <Route path="/web-dev" element={<WebDevPage />} />
           <Route path="/app-dev" element={<AppDevPage />} />
 

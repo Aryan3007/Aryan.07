@@ -52,24 +52,7 @@ const WebDevPage = () => {
       link: "https://react-nike-web.vercel.app/",
       github: "https://github.com/Aryan3007/Sony_headphone",
     },
-    {
-      img: "./s1.png",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
-      heading: " What do you want to know about UI",
-      type: "Business website",
-      link: "https://aryan3007.github.io/Sony_headphone/",
-      github: "https://github.com/Aryan3007/Sony_headphone",
-    },
-    {
-      img: "./n2.png",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
-      heading: " What do you want to know about UI",
-      type: "Business website",
-      link: "https://aryan3007.github.io/Nike_shoes/",
-      github: "https://github.com/Aryan3007/Nike_shoes",
-    },
+
   ]);
   return (
     <section className="bg-white dark:bg-gray-900">

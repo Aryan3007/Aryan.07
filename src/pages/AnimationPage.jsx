@@ -26,36 +26,6 @@ const AnimationPage = () => {
   // eslint-disable-next-line no-unused-vars
   const [projects, setProjects] = useState([
     {
-      img: "./nn1.png",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
-      heading: " What do you want to know about UI",
-      type: "Business website",
-      link: "https://nourishnest.in/",
-      github: "https://github.com/Aryan3007/Sony_headphone",
-
-    },
-    {
-      img: "./e1.png",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
-      heading: " What do you want to know about UI",
-      type: "E-Commerce website",
-      link: "https://frontend-ecommerce-one.vercel.app/",
-      github: "https://github.com/Aryan3007/Sony_headphone",
-
-    },
-    {
-      img: "./n1.png",
-      discription:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
-      heading: " What do you want to know about UI",
-      type: "Business website",
-      link: "https://react-nike-web.vercel.app/",
-      github: "https://github.com/Aryan3007/Sony_headphone",
-
-    },
-    {
       img: "./s1.png",
       discription:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
@@ -63,6 +33,16 @@ const AnimationPage = () => {
       type: "Business website",
       link: "https://aryan3007.github.io/Sony_headphone/",
       github: "https://github.com/Aryan3007/Sony_headphone",
+    },
+ 
+    {
+      img: "./an1.png",
+      discription:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est asperiores vel, ab animi recusandae nulla veritatis id tempore sapiente",
+      heading: " What do you want to know about UI",
+      type: "Business website",
+      link: "https://aryan3007.github.io/Photo_gallery/",
+      github: "https://github.com/Aryan3007/Photo_gallery",
     },
     {
       img: "./n2.png",
@@ -72,7 +52,7 @@ const AnimationPage = () => {
       type: "Business website",
       link: "https://aryan3007.github.io/Nike_shoes/",
       github: "https://github.com/Aryan3007/Nike_shoes",
-    },
+    },   
   ]);
   return (
     <section className="bg-white dark:bg-gray-900">

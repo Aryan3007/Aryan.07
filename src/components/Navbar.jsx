@@ -68,7 +68,7 @@ const Navbar = () => {
                 to="/"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "features"
-                    ? "  bg-transparent border-b-2 border-blue-500"
+                    ? "  bg-transparent border-b-2 text-blue-500 border-blue-500"
                     : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("features")}
@@ -79,7 +79,7 @@ const Navbar = () => {
                 to="/skills"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "downloads"
-                    ? " bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
                     : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("downloads")}
@@ -90,7 +90,7 @@ const Navbar = () => {
                 to="/allprojects"
                 className={`mt-2 w-20 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "docs"
-                    ? " bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
                     : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("docs")}
@@ -101,7 +101,7 @@ const Navbar = () => {
                 to="/about"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "support"
-                    ? " bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
                     : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("support")}
@@ -112,7 +112,7 @@ const Navbar = () => {
                 to="/contact"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 ${
                   activeButton === "blog"
-                    ? " bg-transparent border-b-2 border-blue-500"
+                    ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
                     : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("blog")}
