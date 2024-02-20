@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-const Graphics = () => {
+const Animation = () => {
   return (
     <div className="flex justify-center gap-6 flex-wrap">
       <motion.div
@@ -121,4 +121,4 @@ const Graphics = () => {
   );
 };
 
-export default Graphics;
+export default Animation;

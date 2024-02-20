@@ -1,58 +1,88 @@
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+
 const Footer = () => {
   return (
-    <footer className="flex justify-center px-4 text-gray-800 bg-white dark:text-white dark:bg-gray-900">
-      <div className="container px-6 py-6">
-        <h1 className="text-lg font-bold text-center lg:text-2xl">
-          Join 31,000+ other and never miss <br /> out on new tips, tutorials,
-          and more.
-        </h1>
-        <div className="flex flex-col justify-center mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
-          <input
-            id="email"
-            type="text"
-            className="px-4 py-2 text-gray-700 lg:w-96 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
-            placeholder="Email Address"
-          />
-          <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
-            Subscribe
-          </button>
-        </div>
-        <hr className="h-px bg-gray-200 border-none my-7 dark:bg-gray-700" />
-        <div className="flex flex-col items-center justify-between md:flex-row">
-          <a href="#">
-            <img
-              className="w-auto h-7"
-              src="https://merakiui.com/images/full-logo.svg"
-              alt=""
-            />
-          </a>
-          <div className="flex mt-4 md:m-0">
-            <div className="-mx-4">
+    <footer className="bg-white pt-24 dark:bg-gray-900">
+      <div className="container px-6 py-12 mx-auto">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+          <div className="sm:col-span-2">
+            <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
+              Subscribe our newsletter to get update.
+            </h1>
+            <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+              <input
+                id="email"
+                type="text"
+                className="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                placeholder="Email Address"
+              />
+              <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-blue-800 rounded-lg hover:bg-blue-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-800 dark:text-white">
+              Quick Link
+            </p>
+            <div className="flex flex-col items-start mt-5 space-y-2">
               <a
                 href="#"
-                className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
               >
-                About
+                Home
               </a>
               <a
                 href="#"
-                className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
               >
-                Blog
+                Who We Are
               </a>
               <a
                 href="#"
-                className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
               >
-                News
-              </a>
-              <a
-                href="#"
-                className="px-4 text-sm text-gray-600 transition-colors duration-300 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 hover:underline"
-              >
-                Contact
+                Our Philosophy
               </a>
             </div>
+          </div>
+          <div>
+            <p className="font-semibold text-gray-800 dark:text-white">
+              Industries
+            </p>
+            <div className="flex flex-col items-start mt-5 space-y-2">
+              <a
+                href="#"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              >
+                Retail &amp; E-Commerce
+              </a>
+              <a
+                href="#"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              >
+                Information Technology
+              </a>
+              <a
+                href="#"
+                className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              >
+                Finance &amp; Insurance
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr className="my-6 border-gray-200 md:my-8 dark:border-gray-700" />
+        <div className="flex items-center justify-between">
+          <a href="#">
+            <img className="w-auto h-7" src="./logo.png" alt="" />
+          </a>
+          <div className=" justify-center hidden mt-6 lg:flex gap-3 lg:mt-0 lg:-mx-2">
+            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
           </div>
         </div>
       </div>

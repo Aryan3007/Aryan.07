@@ -1,5 +1,5 @@
+import AnimationPage from "./AnimationPage"
 import AppDevPage from "./AppDevPage"
-
 import WebDevPage from "./WebDevPage"
 
 
@@ -8,6 +8,7 @@ const AllProjects = () => {
     <div>
       <WebDevPage/>
       <AppDevPage/>
+      <AnimationPage/>
 
     </div>
   )

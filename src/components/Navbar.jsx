@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeButton, setActiveButton] = useState("features"); // Add state to track active button
+  const [activeButton, setActiveButton] = useState(null); // Add state to track active button
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -69,7 +69,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "features"
                     ? "  bg-transparent border-b-2 border-blue-500"
-                    : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("features")}
               >
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "downloads"
                     ? " bg-transparent border-b-2 border-blue-500"
-                    : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("downloads")}
               >
@@ -91,7 +91,7 @@ const Navbar = () => {
                 className={`mt-2 w-20 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "docs"
                     ? " bg-transparent border-b-2 border-blue-500"
-                    : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("docs")}
               >
@@ -102,7 +102,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "support"
                     ? " bg-transparent border-b-2 border-blue-500"
-                    : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("support")}
               >
@@ -113,7 +113,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 ${
                   activeButton === "blog"
                     ? " bg-transparent border-b-2 border-blue-500"
-                    : "text-blue-600 bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
                 }`}
                 onClick={() => handleButtonClick("blog")}
               >
@@ -128,9 +128,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className=" justify-center hidden mt-6 lg:flex gap-3 lg:mt-0 lg:-mx-2">
-            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
-            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
-            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 hover:bg-blue-400 duration-100" />
+            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
           </div>
         </div>
       </div>
