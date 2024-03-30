@@ -11,7 +11,7 @@ const Appdev = () => {
           type: "spring",
           stiffness: 260,
           damping: 20,
-        }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md        :bg-gray-800">
       <img
         className="object-cover w-full h-64"
         src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -19,18 +19,18 @@ const Appdev = () => {
       />
       <div className="p-6">
         <div>
-          <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+          <span className="text-xs font-medium text-blue-600 uppercase        :text-blue-400">
             Product
           </span>
           <a
             href="#"
-            className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline"
+            className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform        :text-white hover:text-gray-600 hover:underline"
             tabIndex={0}
             role="link"
           >
             I Built A Successful Blog In One Year
           </a>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-2 text-sm text-gray-600        :text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
             parturient et sem ipsum volutpat vel. Natoque sem et aliquam
             mauris egestas quam volutpat viverra. In pretium nec senectus
@@ -71,7 +71,7 @@ const Appdev = () => {
           type: "spring",
           stiffness: 260,
           damping: 20,
-        }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+        }} className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md        :bg-gray-800">
       <img
         className="object-cover w-full h-64"
         src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -79,18 +79,18 @@ const Appdev = () => {
       />
       <div className="p-6">
         <div>
-          <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+          <span className="text-xs font-medium text-blue-600 uppercase        :text-blue-400">
             Product
           </span>
           <a
             href="#"
-            className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline"
+            className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform        :text-white hover:text-gray-600 hover:underline"
             tabIndex={0}
             role="link"
           >
             I Built A Successful Blog In One Year
           </a>
-          <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+          <p className="mt-2 text-sm text-gray-600        :text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
             parturient et sem ipsum volutpat vel. Natoque sem et aliquam
             mauris egestas quam volutpat viverra. In pretium nec senectus

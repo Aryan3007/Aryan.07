@@ -19,19 +19,19 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow dark:bg-gray-800">
+    <nav className="bg-white shadow        :bg-gray-800">
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex justify-between lg:items-center">
           <div className="flex gap-3 items-center justify-between">
             <Link to="/">
               <img className="w-auto h-6 sm:h-7" src="./logo.png" alt="Logo" />
             </Link>
-            <h1 className="dark:text-white text-black text-xl font-semibold">{`Dev</>Hub`}</h1>
+            <h1 className="       :text-white text-black text-xl font-semibold">{`Dev</>Hub`}</h1>
             <div className="flex lg:hidden">
               <button
                 onClick={toggleMenu}
                 type="button"
-                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className="text-gray-500        :text-gray-200 hover:text-gray-600        :hover:text-gray-400 focus:outline-none focus:text-gray-600        :focus:text-gray-400"
                 aria-label="toggle menu"
               >
                 <svg
@@ -63,13 +63,13 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <div className="flex flex-col mt-4 text-gray-600 capitalize dark:text-gray-300 lg:flex lg:flex-row lg:mt-0 lg:items-center lg:px-16 lg:-mx-4">
+            <div className="flex flex-col mt-4 text-gray-600 capitalize        :text-gray-300 lg:flex lg:flex-row lg:mt-0 lg:items-center lg:px-16 lg:-mx-4">
               <Link
                 to="/"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "features"
                     ? "  bg-transparent border-b-2 text-blue-500 border-blue-500"
-                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200        :border-gray-700        :text-white"
                 }`}
                 onClick={() => handleButtonClick("features")}
               >
@@ -80,7 +80,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "downloads"
                     ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
-                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200        :border-gray-700        :text-white"
                 }`}
                 onClick={() => handleButtonClick("downloads")}
               >
@@ -91,18 +91,18 @@ const Navbar = () => {
                 className={`mt-2 w-20 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "docs"
                     ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
-                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200        :border-gray-700        :text-white"
                 }`}
                 onClick={() => handleButtonClick("docs")}
               >
-                Portfolio
+                Projects
               </Link>
               <Link
                 to="/about"
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4  ${
                   activeButton === "support"
                     ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
-                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200        :border-gray-700        :text-white"
                 }`}
                 onClick={() => handleButtonClick("support")}
               >
@@ -113,7 +113,7 @@ const Navbar = () => {
                 className={`mt-2 w-16 text-center lg:mt-0 lg:mx-4 ${
                   activeButton === "blog"
                     ? " bg-transparent border-b-2 text-blue-500 border-blue-500"
-                    : "text-black bg-transparent border-gray-200 dark:border-gray-700 dark:text-white"
+                    : "text-black bg-transparent border-gray-200        :border-gray-700        :text-white"
                 }`}
                 onClick={() => handleButtonClick("blog")}
               >
@@ -128,9 +128,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className=" justify-center hidden mt-6 lg:flex gap-3 lg:mt-0 lg:-mx-2">
-            <FaGithub className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
-            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
-            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1 dark:hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <FaGithub className="h-7 w-7 bg-white rounded-full p-1        :hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <AiFillInstagram className="h-7 w-7 bg-white rounded-full p-1        :hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
+            <FaXTwitter className="h-7 w-7 bg-white rounded-full p-1        :hover:bg-blue-400 hover:bg-zinc-300 duration-100" />
           </div>
         </div>
       </div>

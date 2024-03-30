@@ -1,46 +1,26 @@
 /* eslint-disable react/no-unescaped-entities */
-
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-};
 
 const FrontPage = () => {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900 text-white">
-        <div className="mx-auto max-w-screen-xl px-4 pt-44 lg:flex lg:h-full lg:items-center">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-              Crafting Digital Experiences
-              <span className="sm:block">One Line of Code at a Time </span>
+      <section className=" text-black">
+        <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-full lg:items-center">
+          <div className="mx-auto text-center">
+            <h1 className="bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-6xl">
+              Elevating the Web: Crafting Digital Experiences Beyond Boundaries!
             </h1>
 
-            <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed dark:text-white text-black">
-              "Building innovative websites and applications tailored to your
-              needs. Let's create your digital masterpiece together."
+            <p className="mx-auto mt-8 max-w-2xl sm:text-md/relaxed">
+             
+Web developers are the digital architects, blending design and code to create seamless online experiences. From front-end finesse to back-end brilliance, they craft the web's foundation, shaping our digital interactions and propelling innovation forward.
             </p>
-
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link style={{ "--clr": "#3f88f3" }} className="button" to="allprojects">
+              <Link
+                style={{ "--clr": "#3f88f3" }}
+                className="button"
+                to="allprojects"
+              >
                 <span className="button__icon-wrapper">
                   <svg
                     width="10"
@@ -71,98 +51,14 @@ const FrontPage = () => {
                 Explore Projects
               </Link>
             </div>
-          </div>
-        </div>
-
-        <div className="bg-white dark:bg-gray-900">
-          <div className=" px-6 py-8 mx-auto">
-            <motion.ul
-              variants={container}
-              initial="hidden"
-              animate="visible"
-              className="grid container gap-8 mt-8 justify-center sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
-            >
-              <motion.li variants={item} href="#" className="group block item">
-                <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-100 duration-500 group-hover:opacity-0"
-                  />
-
-                  <img
-                    src="https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-0 duration-500 group-hover:opacity-100"
-                  />
-                </div>
-
-                <div className="mt-3">
-                  <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Small Headphones
-                  </h3>
-
-                  <p className="mt-1.5 text-pretty text-xs text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis quibusdam ab maiores placeat odio id?
-                  </p>
-                </div>
-              </motion.li>
-
-              <motion.li variants={item} href="#" className="group block item">
-                <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-100  duration-500 group-hover:opacity-0"
-                  />
-
-                  <img
-                    src="https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-0  duration-500 group-hover:opacity-100"
-                  />
-                </div>
-
-                <div className="mt-3">
-                  <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Small Headphones
-                  </h3>
-
-                  <p className="mt-1.5 text-pretty text-xs text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis quibusdam ab maiores placeat odio id?
-                  </p>
-                </div>
-              </motion.li>
-
-              <motion.li variants={item} href="#" className="group block item">
-                <div className="relative rounded-xl overflow-hidden h-[350px] sm:h-[350px]">
-                  <img
-                    src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-100  duration-500 group-hover:opacity-0"
-                  />
-
-                  <img
-                    src="https://images.unsplash.com/photo-1594385208974-2e75f8d7bb48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover opacity-0  duration-500 group-hover:opacity-100"
-                  />
-                </div>
-
-                <div className="mt-3">
-                  <h3 className="text-sm text-gray-700 group-hover:underline group-hover:underline-offset-4">
-                    Small Headphones
-                  </h3>
-
-                  <p className="mt-1.5 text-pretty text-xs text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Omnis quibusdam ab maiores placeat odio id?
-                  </p>
-                </div>
-              </motion.li>
-            </motion.ul>
+            <p className="my-12">
+              Our Performance Marketing Services are Certified by
+            </p>
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+              <div className="h-32 rounded-lg bg-gray-200"></div>
+              <div className="h-32 rounded-lg bg-gray-200"></div>
+              <div className="h-32 rounded-lg bg-gray-200"></div>
+            </div>
           </div>
         </div>
       </section>

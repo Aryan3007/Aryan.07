@@ -55,14 +55,14 @@ const WebDevPage = () => {
 
   ]);
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white        :bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+          <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl        :text-white">
             web development projects
           </h1>
         </div>
-        <hr className="my-8 border-gray-200 dark:border-gray-700" />
+        <hr className="my-8 border-gray-200        :border-gray-700" />
         <motion.ul
           variants={container}
           initial="hidden"
@@ -82,10 +82,10 @@ const WebDevPage = () => {
               />
               <div className="mt-8">
                 <span className="text-blue-500 uppercase">{p.type}</span>
-                <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
+                <h1 className="mt-4 text-xl font-semibold text-gray-800        :text-white">
                   {p.heading}
                 </h1>
-                <p className="mt-2 text-gray-500 dark:text-gray-400">
+                <p className="mt-2 text-gray-500        :text-gray-400">
                   {p.discription}
                 </p>
                 <div className="flex gap-4 mt-3">

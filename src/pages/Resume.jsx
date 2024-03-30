@@ -137,14 +137,14 @@ const Resume = () => {
   ]);
 
   return (
-    <section className="dark:bg-gray-900 dark:text-white">
+    <section className="       :bg-gray-900        :text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">
             Elevating Possibilities: Explore My Expertise
           </h2>
 
-          <p className="mt-4 text-gray-800 dark:text-gray-300">
+          <p className="mt-4 text-gray-800        :text-gray-300">
             Discover the depth of my skills – a fusion of creativity, expertise,
             and innovation. From coding to design, I'm equipped to transform
             ideas into reality. Let's embark on a journey of exploration and
@@ -168,12 +168,12 @@ const Resume = () => {
                 <span className="text-3xl">{s.logo}</span>
               </div>
 
-              <h2 className="mt-4 text-xl font-bold dark:text-white text-black">
+              <h2 className="mt-4 text-xl font-bold        :text-white text-black">
                 {s.lang}{" "}
                 <span className="font-semibold text-sm">{`(${s.level})`}</span>
               </h2>
 
-              <p className="mt-1 text-sm dark:text-gray-300 text-black">
+              <p className="mt-1 text-sm        :text-gray-300 text-black">
                 {s.discription}
               </p>
             </motion.li>

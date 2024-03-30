@@ -1,21 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-white dark:bg-gray-900 lg:flex">
+    <section className="min-h-screen bg-white        :bg-gray-900 lg:flex">
       <div className="flex flex-col justify-center w-full p-8   lg:px-12 xl:px-32 lg:w-1/2">
-        <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
+        <h1 className="text-2xl font-semibold text-gray-800 capitalize        :text-white lg:text-3xl">
           hire Me.
         </h1>
-        <p className="mt-4 text-gray-500 dark:text-gray-400">
+        <p className="mt-4 text-gray-500        :text-gray-400">
         I'm always eager to connect, collaborate, and discuss exciting opportunities. Whether you have a project in mind, want to learn more about my work, or simply wish to say hello, don't hesitate to reach out.
         </p>
         <div className="mt-6 md:mt-8">
-          <h3 className="font-medium text-gray-600 dark:text-gray-300 ">
+          <h3 className="font-medium text-gray-600        :text-gray-300 ">
             Follow me
           </h3>
           <div className="flex mt-4 -mx-1.5 ">
             <a
-              className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+              className="mx-1.5        :hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
               href="#"
             >
               <svg
@@ -28,7 +28,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+              className="mx-1.5        :hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
               href="#"
             >
               <svg
@@ -52,7 +52,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+              className="mx-1.5        :hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
               href="#"
             >
               <svg
@@ -68,7 +68,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              className="mx-1.5 dark:hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
+              className="mx-1.5        :hover:text-blue-400 text-gray-400 transition-colors duration-300 transform hover:text-blue-500"
               href="#"
             >
               <svg
@@ -90,32 +90,32 @@ const Contact = () => {
         <form>
           <div className="-mx-2 md:items-center md:flex">
             <div className="flex-1 px-2">
-              <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className="block mb-2 text-sm text-gray-600        :text-gray-200">
                 Full Name
               </label>
               <input
                 type="text"
                 placeholder="John Doe"
-                className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-blue-400        :focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
             <div className="flex-1 px-2 mt-4 md:mt-0">
-              <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+              <label className="block mb-2 text-sm text-gray-600        :text-gray-200">
                 Email address
               </label>
               <input
                 type="email"
                 placeholder="johndoe@example.com"
-                className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-blue-400        :focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
           </div>
           <div className="w-full mt-4">
-            <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
+            <label className="block mb-2 text-sm text-gray-600        :text-gray-200">
               Message
             </label>
             <textarea
-              className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
+              className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56        :placeholder-gray-600        :bg-gray-900        :text-gray-300        :border-gray-700 focus:border-blue-400        :focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
               placeholder="Message"
               defaultValue={""}
             />

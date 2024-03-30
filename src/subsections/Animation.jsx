@@ -5,14 +5,14 @@ const Animation = () => {
   return (
     <div className="flex justify-center gap-6 flex-wrap">
       <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 0, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ y: "-20px", opacity: 1 }}
         transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
+          ease: "linear",
+          duration: 1,
+          y: { duration: 1 },
         }}
-        className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800"
+        className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md        :bg-gray-800"
       >
         <img
           className="object-cover w-full h-64"
@@ -21,18 +21,18 @@ const Animation = () => {
         />
         <div className="p-6">
           <div>
-            <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+            <span className="text-xs font-medium text-blue-600 uppercase        :text-blue-400">
               Product Website designing (SONY)
             </span>
             <a
               href="#"
-              className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline"
+              className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform        :text-white hover:text-gray-600 hover:underline"
               tabIndex={0}
               role="link"
             >
               I Built A Successful Blog In One Year
             </a>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-600        :text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
               parturient et sem ipsum volutpat vel. Natoque sem et aliquam
               mauris egestas quam volutpat viverra. In pretium nec senectus
@@ -67,14 +67,14 @@ const Animation = () => {
         </div>
       </motion.div>
       <motion.div
-        initial={{ scale: 0 }}
-        animate={{ rotate: 0, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ y: "-20px", opacity: 1 }}
         transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
+          ease: "linear",
+          duration: 1,
+          y: { duration: 1 },
         }}
-        className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800"
+        className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md        :bg-gray-800"
       >
         <img
           className="object-cover w-full h-64"
@@ -83,18 +83,18 @@ const Animation = () => {
         />
         <div className="p-6">
           <div>
-            <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+            <span className="text-xs font-medium text-blue-600 uppercase        :text-blue-400">
               Product Website Designing (NIKE)
             </span>
             <a
               href="#"
-              className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline"
+              className="block mt-2 text-xl font-semibold text-gray-800 transition-colors duration-300 transform        :text-white hover:text-gray-600 hover:underline"
               tabIndex={0}
               role="link"
             >
               I Built A Successful Blog In One Year
             </a>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-sm text-gray-600        :text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie
               parturient et sem ipsum volutpat vel. Natoque sem et aliquam
               mauris egestas quam volutpat viverra. In pretium nec senectus
